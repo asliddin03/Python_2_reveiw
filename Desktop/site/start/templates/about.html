@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html> 
+
+<head> 
+  <title>Болтаев Аслидин — студент МФТИ</title> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style type="text/css">
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">Главная</a></li>
+          <li class="nav-item"><a href="/post" class="btn btn-success">Статьи</a></li>
+          <li class="nav-item"><a href="/create" class="btn btn-warning">Создать</a></li>
+        </ul>
+      </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Болтаев Аслиддин</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <p>Я преподаю информатику с 2008 года, когда предмет ещё назывался ИКТ. Начинал со школы, учил детей разбираться
+          в программировании и сдавать ЕГЭ на 90 баллов и выше. За два года вывел нашу школу на второе место в районе по
+          олимпиадам по информатике. Вёл два класса коррекции — пятый и одиннадцатый — и знаю, как объяснить основы
+          теории вероятности даже тем, кто не хочет ничему учиться.</p>
+        <p>В 2012 защитил кандидатскую диссертацию по обучению информатике детей с недостатком внимания и стал
+          внештатным преподавателем РГСУМ им. Макаренко. Параллельно с этим веду курсы по программированию «IDDQD» и
+          записываю подкаст «Прогрокаст» с аудиторией 25 000 человек.</p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="{{ url_for('static', filename='images/2.png')}}">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Мои проекты</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <p><a href="https://github.com/asliddin03/TP_Sea_Battle">Морской Бой</a></p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <p><a href="https://github.com/asliddin03/Python">Текстовый редактор</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Контакты для связи</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Телефон: +7 (999) 560-38-56</p>
+        <p>Почта: <a href="mailto: boltaev.ak@phystech.edu">boltaev.ak@phystech.edu/a></p>
+        <p>Телеграм: @asliddin03_b</p>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- конец всей страницы -->
+
+</html>

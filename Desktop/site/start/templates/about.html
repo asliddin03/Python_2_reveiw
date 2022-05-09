@@ -5,7 +5,8 @@
   <title>Болтаев Аслидин — студент МФТИ</title> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style type="text/css">
@@ -16,17 +17,16 @@
 
     h1 {
       font-size: 50px;
-      margin-top: 30px;
-      margin-bottom: 20px;
+      margin-top: 100px;
+      margin-bottom: 30px;
     }
 
     h2 {
-      margin-top: 40px;
       margin-bottom: 20px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 22px;
     }
   </style>
 </head>
@@ -49,14 +49,13 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <p>Я преподаю информатику с 2008 года, когда предмет ещё назывался ИКТ. Начинал со школы, учил детей разбираться
-          в программировании и сдавать ЕГЭ на 90 баллов и выше. За два года вывел нашу школу на второе место в районе по
-          олимпиадам по информатике. Вёл два класса коррекции — пятый и одиннадцатый — и знаю, как объяснить основы
-          теории вероятности даже тем, кто не хочет ничему учиться.</p>
-        <p>В 2012 защитил кандидатскую диссертацию по обучению информатике детей с недостатком внимания и стал
-          внештатным преподавателем РГСУМ им. Макаренко. Параллельно с этим веду курсы по программированию «IDDQD» и
-          записываю подкаст «Прогрокаст» с аудиторией 25 000 человек.</p>
-      </div>
+        <p>Я, Болтаев Аслиддин Кабирджонович, 17.01.2003 года рождения, уроженец г. Канибадам. 
+        В 2009 году поступил в частную школу О.Джураева г. Канибадам.</p>
+        <p>В 2020 году окончил ее, и в 2021 году поступил в Московский физико-технический институт 
+        на факультет прикладная математика и информатика. </p>
+        <p>Мать: Шодиева Гузал Тоджибоевна, 1971 года рождения.</p>
+        <p>Отец: Болтаев Кабирджон Каримджонович, 1967 года рождения</p>
+    </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img src="{{ url_for('static', filename='images/2.png')}}">
       </div>

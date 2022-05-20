@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Все статьи на сайте
+{% endblock %}
+
+{% block body %}
+<div>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">Главная</a></li>
+            <li class="nav-item"><a href="/about" class="btn btn-secondary">О себе</a></li>
+            <li class="nav-item"><a href="/create" class="btn btn-warning">Создать</a></li>
+        </ul>
+    </header>
+    <h1>Все статьи на сайте</h1>
+    {% if a|length > 0 %}
+        {% for i in a %}
+        <div class="alert alert-info">
+            <h2>{{ i.title }}</h2>
+            <p>{{ i.intro }}</p>
+            <p><b>Дата: {{ i.date.date() }}</b></p>
+            <a href="/post/{{ i.id }}" class="btn btn-warning">Детальнее</a>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>Нет статей на сайте</p>
+    {% endif %}
+</div> 
+{% endblock %}
